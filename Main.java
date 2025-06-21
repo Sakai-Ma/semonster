@@ -1,7 +1,11 @@
 public class Main {
   public static void main(String[] args) {
     System.out.println("SEMonster!");
-    Monster monster = new Monster();
-    System.out.println(monster.toString());
+    // Playerクラスのインスタンスを生成
+    Player player = new Player();
+    // モンスターを引く処理
+    player.drawMonsters();
+    // デッキの中身を表示する処理
+    player.showDeck();
   }
 }
